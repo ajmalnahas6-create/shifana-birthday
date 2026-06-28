@@ -172,7 +172,7 @@ transform:translateY(-120vh);
 
 </div>
 <script>
-  function openLetter(){
+function openLetter() {
     document.getElementById("letterScreen").style.display = "none";
     document.getElementById("mainContent").style.display = "block";
 
@@ -181,13 +181,14 @@ transform:translateY(-120vh);
         music.play().catch(() => {});
     }
 
-for(let i=0;i<25;i++){
-let h=document.createElement("div");
-h.className="heart";
-h.innerHTML="❤️";
-h.style.left=Math.random()*100+"vw";
-h.style.animationDuration=(5+Math.random()*5)+"s";
-document.body.appendChild(h);
+    for (let i = 0; i < 25; i++) {
+        let h = document.createElement("div");
+        h.className = "heart";
+        h.innerHTML = "❤️";
+        h.style.left = Math.random() * 100 + "vw";
+        h.style.animationDuration = (5 + Math.random() * 5) + "s";
+        document.body.appendChild(h);
+    }
 }
 </script>
 <audio id="bgMusic" autoplay loop>
