@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Shifana ❤️</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#f5e6d3;
+  font-family:'Noto Sans Malayalam',sans-serif;
+  overflow-x:hidden;
+}
+
+/* ആദ്യത്തെ ലെറ്റർ സ്ക്രീൻ */
+#letterScreen{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(to bottom,#f8e8d8,#e6c9a8);
+}
+
+.envelope{
+  width:300px;
+  height:200px;
+  background:#d8b48a;
+  border-radius:12px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  cursor:pointer;
+  padding:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+  transition:0.4s;
+}
+
+.envelope:hover{
+  transform:scale(1.05);
+}
+
+.envelope h2{
+  color:#5a3b1f;
+  line-height:1.7;
+}
+
+/* മെയിൻ കണ്ടന്റ് */
+#mainContent{
+  display:none;
+}
+
+/* ഫോട്ടോ സെക്ഷൻ */
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+  url('IMG-20260622-WA0104.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero-content h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero-content p{
+  font-size:22px;
+  max-width:700px;
+  line-height:1.6;
+}
+
+/* ലെറ്റർ */
+.message{
+  max-width:900px;
+  margin:40px auto;
+  padding:50px 25px;
+  font-size:20px;
+  line-height:1.9;
+  color:#333;
+  background:linear-gradient(135deg,#fff0f5,#ffe4e1);
+  border-radius:30px;
+  box-shadow:0 10px 30px rgba(255,105,180,0.2);
+}
+
+.signature{
+  text-align:center;
+  font-size:28px;
+  color:#d63384;
+  margin-top:30px;
+}
+
+/* ഫ്ലോട്ടിംഗ് ഹാർട്സ് */
+.heart{
+  position:fixed;
+  bottom:-20px;
+  font-size:24px;
+  animation:float 8s linear infinite;
+  opacity:.7;
+  pointer-events:none;
+}
+
+@keyframes float{
+  from{
+    transform:translateY(0);
+  }
+  to{
+    transform:translateY(-120vh);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="letterScreen">
+  <div class="envelope" onclick="openLetter()">
+    <h2>
+      💌<br><br>
+      എന്റെ പ്രിയപ്പെട്ട ശിഫാനയ്ക്ക് ❤️<br><br>
+      Tap To Open
+    </h2>
+  </div>
+</div>
+
+<div id="mainContent">
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>എന്റെ പ്രിയപ്പെട്ട ഷിഫാന ❤️</h1>
+      <p>എന്റെ ജീവിതത്തിലെ ഏറ്റവും മനോഹരമായ അനുഗ്രഹമാണ് നീ...</p>
+    </div>
+  </section>
+
+  <div class="message">
+
+    എന്റെ ജീവിതത്തിൽ അല്ലാഹു എനിക്ക് തന്ന ഏറ്റവും മനോഹരമായ അനുഗ്രഹങ്ങളിലൊന്നാണ് നീ.<br><br>
+
+    നിന്നെ എന്റെ ജീവിതപങ്കാളിയായി ലഭിക്കാൻ പോകുന്നു എന്ന ചിന്ത തന്നെ എനിക്ക് ഒരു പ്രത്യേക സന്തോഷവും സമാധാനവും നൽകുന്നു.<br><br>
+
+    ചില ആളുകൾ നമ്മുടെ ജീവിതത്തിലേക്ക് വരുന്നത് വെറുമൊരു വ്യക്തിയായിട്ടല്ല, നമ്മുടെ മനസ്സിന് ഒരു ആശ്വാസമായിട്ടാണ്. എനിക്ക് നീ അങ്ങനെയാണ്.<br><br>
+
+    ജീവിതത്തിൽ സന്തോഷങ്ങളും വിഷമങ്ങളും ഉണ്ടാകും. പക്ഷേ ഏത് സാഹചര്യത്തിലും നിന്റെ കൈപിടിച്ച് നിന്റെ കൂടെ നിൽക്കാൻ എനിക്ക് കഴിയട്ടെ എന്നാണ് എന്റെ ഏറ്റവും വലിയ ആഗ്രഹം.<br><br>
+
+    നിന്നോട് സംസാരിക്കുമ്പോൾ കിട്ടുന്ന സമാധാനവും സന്തോഷവും മറ്റെവിടെയും എനിക്ക് കിട്ടിയിട്ടില്ല.<br><br>
+
+    അല്ലാഹു നമ്മുടെ ജീവിതത്തിൽ സ്നേഹവും കരുണയും ബറക്കത്തും നിറക്കട്ടെ.<br><br>
+
+    ജന്മദിനാശംസകൾ, എന്റെ പ്രിയപ്പെട്ടവളേ ❤️
+
+    <div class="signature">
+      🌹 എന്നും നിന്റെ മാത്രം,<br>
+      ❤️ സൽമാൻ
+    </div>
+<div style="text-align:center; margin-top:40px;">
+  <button onclick="openSurprise()"
+    style="padding:15px 30px;
+    background:#d63384;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;">
+
+    🎁 Surprise For You ❤️
+  </button>
+</div>
+  </div>
+
+</div>
+
+<script>
+
+function openLetter() {
+  document.getElementById("letterScreen").style.display = "none";
+  document.getElementById("mainContent").style.display = "block";
+
+  const music = document.getElementById("bgMusic");
+  if (music) {
+    music.play().catch(() => {});
+  }
+
+  for (let i = 0; i < 25; i++) {
+    let h = document.createElement("div");
+    h.className = "heart";
+    h.innerHTML = "❤️";
+    h.style.left = Math.random() * 100 + "vw";
+    h.style.animationDuration =
+      (5 + Math.random() * 5) + "s";
+    document.body.appendChild(h);
+  }
+}
+
+function openSurprise() {
+  document.getElementById("videoPopup").style.display = "block";
+}
+
+</script>
+
+
+
+<audio id="bgMusic" loop>
+  <source src="atlasaudio-piano-romantic-510293.mp3" type="audio/mpeg">
+</audio>
+<div id="videoPopup"
+style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+z-index:9999;">
+
+<video
+width="100%"
+height="100%"
+controls
+autoplay>
+
+<source src="VN20260628_184047.mp4" type="video/mp4">
+
+</video>
+
+</div>
+</body>
+</html>
