@@ -118,20 +118,26 @@ transform:translateY(-120vh);
 
 <body>
 
-<div id="letterScreen">
-<div class="envelope" onclick="openLetter()">
-<h2>
-💌<br><br>
-എന്റെ പ്രിയപ്പെട്ട ഷിഫാനയ്ക്ക് ❤️<br><br>
-Tap To Open
-</h2>
-</div>
+<div <div id="letterScreen">
+    <div class="envelope" onclick="openLetter()">
+        <h2>
+            💌<br><br>
+            എന്റെ പ്രിയപ്പെട്ട ശിഫാനയ്ക്ക് ❤️<br><br>
+            Tap To Open
+        </h2>
+    </div>
 </div>
 
 <div id="mainContent">
+    <section class="hero">
+        <div class="hero-content">
+            ...
+        </div>
+    </section>
+</div>
+</div>
+</div>
 
-<section class="hero">
-<div class="hero-content">
 <h1>എന്റെ പ്രിയപ്പെട്ട ഷിഫാനേ ❤️</h1>
 <p>
 എന്റെ ജീവിതത്തിലെ ഏറ്റവും മനോഹരമായ അനുഗ്രഹമാണ് നീ...
@@ -167,10 +173,13 @@ Tap To Open
 </div>
 
   function openLetter(){
-    document.getElementById("letterScreen").style.display="none";
-    document.getElementById("mainContent").style.display="block";
-    document.getElementById("bgMusic").play();
-}
+    document.getElementById("letterScreen").style.display = "none";
+    document.getElementById("mainContent").style.display = "block";
+
+    const music = document.getElementById("bgMusic");
+    if (music) {
+        music.play().catch(() => {});
+    }
 
 for(let i=0;i<25;i++){
 let h=document.createElement("div");
