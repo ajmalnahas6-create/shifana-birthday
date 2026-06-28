@@ -166,10 +166,10 @@ Tap To Open
 
 </div>
 
-<script>
-function openLetter(){
-document.getElementById("letterScreen").style.display="none";
-document.getElementById("mainContent").style.display="block";
+  function openLetter(){
+    document.getElementById("letterScreen").style.display="none";
+    document.getElementById("mainContent").style.display="block";
+    document.getElementById("bgMusic").play();
 }
 
 for(let i=0;i<25;i++){
@@ -181,7 +181,7 @@ h.style.animationDuration=(5+Math.random()*5)+"s";
 document.body.appendChild(h);
 }
 </script>
-<audio id="bgMusic" loop>
+<audio id="bgMusic" autoplay loop>
   <source src="productionmusic-piano-piano-music-293598.mp3" type="audio/mpeg">
 </audio>
 </body>
